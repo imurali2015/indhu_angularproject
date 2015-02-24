@@ -1,0 +1,16 @@
+[
+     {
+        "stateName": "root.groups",
+        "urlPrefix": "/groups",
+        "url": "^/groups",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "main@": {
+                "templateUrl": "scripts/groups/templates/groups.html",
+                "controller": "scripts/groups/controllers/GroupsCtrl"
+            }
+        }
+    }
+
+]

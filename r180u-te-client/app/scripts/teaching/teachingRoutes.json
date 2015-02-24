@@ -1,0 +1,16 @@
+[
+     {
+        "stateName": "root.teaching",
+        "urlPrefix": "/teaching",
+        "url": "^/teaching",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "main@": {
+                "templateUrl": "scripts/teaching/templates/teaching.html",
+                "controller": "scripts/teaching/controllers/TeachingCtrl"
+            }
+        }
+    }
+
+]

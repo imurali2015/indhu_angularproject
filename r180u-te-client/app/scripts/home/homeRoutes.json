@@ -1,0 +1,21 @@
+[
+    {
+        "stateName": "root",
+        "urlPrefix": "/root",
+        "url": "/root",
+        "abstract": "true",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "footer@": {
+                "templateUrl": "scripts/home/templates/footer.html",
+                "controller": "scripts/home/controllers/FooterCtrl"
+            },
+            "header@": {
+                "templateUrl": "scripts/home/templates/header.html",
+                "controller": "scripts/home/controllers/HeaderCtrl"
+            }
+         }
+    }
+
+]

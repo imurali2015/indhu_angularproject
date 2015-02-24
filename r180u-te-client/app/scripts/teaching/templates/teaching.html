@@ -1,0 +1,115 @@
+<div class="teaching">
+    <bg-splitter orientation="horizontal" min-size="100">
+        <bg-pane min-size="500">
+            <h5 class="text-center headTitle">
+                <i class="fa fa-book fa-2x">
+                    {{model.title}}
+                </i>
+                <a href="#"><i class="fa fa-times fa-1x"></i></a>
+            </h5>
+            <node-list ng-model="model.data">
+            </node-list>
+        <!-- <ul class="list-unstyled col-lg-12">
+                <li class="list-unstyled-item paginationclass"  ng-repeat="item in model.data" ng-click="item.active = !item.active">
+                   <span ng-click="bullet = !bullet">
+                       <i class="fa fa-caret-right"> </i>
+                           <span>{{item.text}}</span>
+                   </span>
+                  <ul class="list-nostyle col-lg-12">
+                        <li class="list-nostyle-item"  ng-repeat="child in item.description" ng-click="child.active = !child.active" ng-show="bullet">
+                            <i class="fa fa-caret-right"></i>
+                            <span>{{child.text}}</span>
+                            <ul class="list-nostyle col-lg-12">
+                                <li class="list-nostyle-item"  ng-repeat="subchild in child.explain" ng-show="child.active">
+                                    <span>{{subchild.text}}</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+         </ul> -->
+
+            <div class="lessonBar">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#basicModal"><i class="fa fa-plus-circle fa-2x"></i>ADD</a>
+                    </li>
+                    <li>
+                        <a class="tooltips" href="#"><i class="fa fa-font "></i>
+                            <span>Font Selector</span></a>
+                    </li>
+                    <li style="border:none" class="pagination pagination-centered" ng-show="model.data.length">
+                    <li style="border:none">
+                        <button type="button" class="btn" ng-disabled="curPage == 0"
+                                ng-click="curPage=curPage-1"> &lt;</button>
+                    </li>
+                    <li style="border:none">
+                        <span> {{curPage + 1}} / {{ numberOfPages() }}</span>
+                    </li>
+                    <li style="border:none">
+                        <button type="button" class="btn"
+                                ng-disabled="curPage >= model.data.length/pageSize - 1"
+                                ng-click="curPage = curPage+1">&gt;</button>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </bg-pane>
+        <bg-pane min-size="500">
+            <div class="main">
+                <h1>Main Content</h1>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+                <p>Scholastic Corporation is a U.S. publisher and education and media company known for publishing,
+                    selling, and distributing books and educational materials for schools, teachers, parents, and children.
+                    Products are distributed to schools and districts, to consumers through the schools via reading clubs and fairs,
+                    and through retail stores and online sales.
+                    It also holds the exclusive U.S. publishing rights to Harry Potter and The Hunger Games book series.</p>
+            </div>
+        </bg-pane>
+        </bg-pane>
+    </bg-splitter>
+
+    <!-- ADD-->
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                    <h4 class="modal-title" id="myModalLabel">Add Functionality</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Add Content</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Add -->
+</div>

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "text": "Teaching",
+        "icon": "",
+        "description": "Teaching",
+        "url": "Teaching"
+    },
+    {
+        "id": 2,
+        "icon": "",
+        "text": "Student",
+        "description": "Student",
+        "url": "Student"
+    },
+    {
+        "id": 3,
+        "icon": "",
+        "text": "Groups",
+        "description": "Groups",
+        "url": "Groups"
+    },
+    {
+        "id": 4,
+        "icon": "",
+        "text": "Present",
+        "description": "Groups",
+        "url": "Groups"
+    }
+]

@@ -1,0 +1,16 @@
+[
+     {
+        "stateName": "root.dashboard",
+        "urlPrefix": "/",
+        "url": "^/",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "main@": {
+                "templateUrl": "scripts/dashboard/templates/dashboard.html",
+                "controller": "scripts/dashboard/controllers/DashboardCtrl"
+            }
+        }
+    }
+
+]

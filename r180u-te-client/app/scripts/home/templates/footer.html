@@ -1,0 +1,28 @@
+<div class="nav navbar-fixed-bottom">
+    <div ng-init="ShowToolBar = false" collapse="ShowToolBar">
+        <nav class="navbar navbar-default footerBar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <ul class="nav nav-pills nav-justified">
+                <li ng-class="{active:model.selected === 'teaching' ,inActive:model.selected != 'teaching'}">
+                    <a href="#/teaching" ng-click="model.selected = 'teaching'">
+
+                  <i  class="fa fa-book"ng-click="model.selected = 'teaching'">
+                    </i> Teaching</a></li>
+                <li ng-class="{active:model.selected === 'tbd' ,inActive:model.selected != 'tbd'}">
+                    <a href="#/tbd" ng-click="model.selected = 'tbd'"><i class="fa  fa-tasks"></i>TBD</a></li>
+                <li ng-class="{active:model.selected === 'groups' ,inActive:model.selected != 'groups'}">
+                    <a href="#/groups" ng-click="model.selected = 'groups'">
+                       <i class="fa fa-refresh"></i> Groups</a></li>
+
+                    <li ng-class="{active:model.selected === 'present' ,inActive:model.selected != 'present'}">
+                    <a href="#/present" ng-click="model.selected = 'present'">
+                       <i class="fa fa-video-camera"></i> Present</a></li>
+            </ul>
+            </div>
+    </nav>
+    </div>
+</div>
+<div>
+    <img src="/app/images/footerArrow.png"  class="footerArrow" ng-click="ShowToolBar = !ShowToolBar" />
+</div>

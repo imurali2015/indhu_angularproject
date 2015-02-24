@@ -1,0 +1,208 @@
+.teaching {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    height:84%;
+    width:100%;
+    background-color:#d8d8d8;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+.headTitle{
+    border-bottom:2px solid #a2a2a2;
+    padding:8px 0;
+    font-size: 12px;
+    i.fa-times{
+        margin-top:10px;
+        cursor: pointer;
+        margin-right:10px;
+    }
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+#main {
+    background-color:#e8e8e8;
+    padding-right:0;
+    float:right;
+}
+ul.list-unstyled{
+    li{
+        margin:10px 5px;
+        padding:5px 0;
+        font-size:16px;
+        cursor: pointer;
+        border-bottom:1px solid #a2a2a2;
+        i{
+            margin-right:10px;
+        }
+    }
+}
+
+ul.list-nostyle{
+    li{
+        margin:10px 5px;
+        border-bottom:0;
+        padding:5px 0;
+        font-size:16px;
+        cursor: pointer;
+        margin-left:50px;
+        i{
+            margin-right:10px;
+        }
+    }
+}
+
+
+.lessonBar{
+    background-color: #d8d8d8;
+    height: 10%;
+    bottom: 40px;
+    position: absolute;
+    border-top: 1px solid #a3a3a3;
+    ul{
+        padding:5px 0;
+        li{
+            border-right:1px solid #a3a3a3;
+            a{
+                color: #484848;
+                font-size: 20px;
+                font-weight: bold;
+                i{
+                    margin-right:10px;
+                }
+            }
+            a:hover{
+                background: none;
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+/*Splitting Screen */
+
+.split-panes
+{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.split-panes > .split-handler
+{
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+
+}
+
+/* Horizontal */
+
+.split-panes.horizontal > .split-handler
+{
+    width: 4px;
+    top: 250px;
+    left: 30%;
+    bottom: 250px;
+    cursor: col-resize;
+}
+
+.resizeBtn{
+    bottom: 250px;
+    top: 250px;
+    cursor:pointer;
+}
+
+
+.split-panes.horizontal > .split-pane1,
+.split-panes.horizontal > .split-pane2
+{
+    position: absolute;
+    height: 100%;
+    overflow: scroll;
+}
+
+.split-panes.horizontal > .split-pane1
+{
+    width: 30%;
+}
+
+.split-panes.horizontal > .split-pane2
+{
+    left: 30%;
+    right: 0px;
+    border-left: 1px solid #a3a3a3;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+/* Tool Tip */
+a.tooltips {
+    position: relative;
+    display: inline;
+}
+a.tooltips span {
+    position: absolute;
+    width:140px;
+    color: #FFFFFF;
+    background: #484848;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 11px;
+}
+a.tooltips span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-top: 8px solid #484848;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -76px;
+    z-index: 999;
+}
+
+a.close{
+    margin-top: -20px;
+}
+/* Pagination */
+.paginationclass{
+
+    margin: 19px 28px;
+}
+.paginationclass span{
+    margin-left:15px;
+    display:inline-block;
+}
+.pagination-controle li{
+    display: inline-block;
+}
+.pagination-controle button{
+    font-size: 12px;
+    margin-top: -26px;
+    cursor:pointer;
+
+}
+.pagination{
+    margin:5px 12px !important;
+}

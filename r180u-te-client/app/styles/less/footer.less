@@ -1,0 +1,41 @@
+nav.footerBar{
+    background-color:#d4d4d4;
+    margin-bottom: 0px;
+    ul{
+        padding:5px 0;
+        li{
+            border-right:1px solid #a3a3a3;
+            a{
+                color: #484848;
+                font-size: 24px;
+                font-weight: bold;
+                i{
+                    margin-right:10px;
+                }
+            }
+            a:hover{
+                background: #337ab7;
+                color:#ffffff;
+            }
+        }
+        li:last-child{
+            border-right: none;
+        }
+        li.active{
+            a{
+                background: none;
+                color:#337ab7;
+            }
+            a:hover{
+                color:#fff;
+            }
+        }
+    }
+}
+.footerArrow{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    z-index: 999999;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "text": "Goals",
+        "icon": "",
+        "description":   [{
+            "text": "Literacy Goal: Summarize the topic and important details",
+            "description":
+            [
+                {
+                    "text": "111"},
+                {
+                    "text": "112"}
+            ]},
+            {
+                "text": "Math Goal:Teach Algebra for 6th Grade",
+                "description": [{
+                    "text": "121"}, {
+                    "text": "122"}]}]
+    },
+
+    {
+        "id": 2,
+        "icon": "",
+        "text": "Heads Up",
+        "description": "Heads Up",
+        "url": "HeadsUp"
+    },
+    {
+        "id": 3,
+        "icon": "",
+        "text": "Whole Groups",
+        "description":   [{
+            "text": "DO NOW!",
+            "description":
+            [
+                {
+                    "text": "Have Students share their responses using the DoNow routine"},
+                {
+                    "text": "A Bully Acts like a ______ when he or she __________."}
+            ]},
+            {
+                "text": "SHARE TODAY'S GOALS",
+                "description": [{
+                    "text": "Literacy Goal"}, {
+                    "text": "Language Goal"}]}]
+    },
+    {
+        "id": 4,
+        "icon": "",
+        "text": "Small Group",
+        "description": "Small Group",
+        "url": "SmallGroup"
+    },
+    {
+        "id": 5,
+        "icon": "",
+        "text": "Wrap Up",
+        "description": "Wrap Up",
+        "url": "WrapUp"
+    }
+]

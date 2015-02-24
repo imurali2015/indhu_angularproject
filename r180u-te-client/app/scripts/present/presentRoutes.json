@@ -1,0 +1,16 @@
+[
+     {
+        "stateName": "root.present",
+        "urlPrefix": "/present",
+        "url": "^/present",
+        "type": "requireCtrl",
+        "data": {},
+        "views": {
+            "main@": {
+                "templateUrl": "scripts/present/templates/present.html",
+                "controller": "scripts/present/controllers/PresentCtrl"
+            }
+        }
+    }
+
+]
